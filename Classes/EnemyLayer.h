@@ -9,6 +9,7 @@ public:
 	static CCScene * scene();
 	CREATE_FUNC(EnemyLayer);
 	bool init();
+	void onExit();
 
 	void removeEnemyCallback(CCNode *);
 	void stopSchedule();

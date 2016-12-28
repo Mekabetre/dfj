@@ -9,6 +9,7 @@ public:
 	static CCScene * scene();
 	CREATE_FUNC(BulletLayer);
 	bool init();
+	void onExit();
 
 	void startShoot();
 	void stopShoot();

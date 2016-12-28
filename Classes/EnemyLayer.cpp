@@ -18,6 +18,10 @@ bool EnemyLayer::init(){
 	schedule(schedule_selector(EnemyLayer::addEnemy), 0.5f);
 	return true;
 }
+void EnemyLayer::onExit(){
+	CCLayer::onExit();
+	enemies->release();
+}
 
 void EnemyLayer::addEnemy(float dt){
 	Enemy * enemy;

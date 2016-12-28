@@ -11,6 +11,11 @@ bool PropsLayer::init(){
 
 	return true;
 }
+void PropsLayer::onExit(){
+	CCLayer::onExit();
+	props->release();
+}
+
 
 void  PropsLayer::startAddProps(){
 	schedule(schedule_selector(PropsLayer::scheduleAddProps), 5);

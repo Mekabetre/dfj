@@ -24,6 +24,11 @@ bool BulletLayer::init(){
 	return true;
 }
 
+void BulletLayer::onExit(){
+	CCLayer::onExit();
+	_bullets->release();
+}
+
 
 void BulletLayer::startShoot(){
 	schedule(schedule_selector(BulletLayer::scheduleCallBack), 0.15f);

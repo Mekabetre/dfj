@@ -10,6 +10,7 @@ class PropsLayer :public CCLayer
 public:
 	CREATE_FUNC(PropsLayer);
 	bool init();
+	void onExit();
 
 	void startAddProps();
 	void scheduleAddProps(float dt);
